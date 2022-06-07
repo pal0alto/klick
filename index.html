@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="surveystyle.css">
-    <title>Dating Survey</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1 id="title">Dating Survey</h1>
@@ -14,7 +13,7 @@
     <label id="number-label">Age: <input id="number" name="number" type="number" min="0" max="120" required placeholder="Enter your age">
     </fieldset>
     <fieldset class="who">
-    Whom have you dated with?<select id="dropdown">
+    Whom have you actually dated?<select id="dropdown">
       <option>Artun</option>
       <option>Altuğ</option>
       <option>R2</option>
@@ -29,7 +28,7 @@
         <label><input value="4" name="howa" type="radio" class="inline" /> It was the worst!</label>
     </fieldset>
     <fieldset>
-      Which events occured? <br> (You can select multiple options)
+      Which events occured? <br> (You can pick multiple options)
       <label><input value="1" name="what" type="checkbox" class="inline" /> We had dinner.</label>
         <label><input value="2" name="what" type="checkbox" class="inline" /> We drank.</label>
         <input value="3" name="what" type="checkbox" class="inline" /> We danced together.</label>
@@ -38,10 +37,39 @@
         <label><input value="6" name="what" type="checkbox" class="inline" /> I got drunk.</label>
         <label><input value="7" name="what" type="checkbox" class="inline" /> I went to his/her/their place.</label>
     </fieldset>
+    <fieldset class="place">
+      Which place was your favourite?
+      <label><input value="1" name="place" type="radio" class="inline" /> Doğa Cafe</label>
+        <label><input value="2" name="place" type="radio" class="inline" /> Tortuga</label>
+        <label><input value="3" name="place" type="radio" class="inline" /> Tato Bar</label>
+    </fieldset>
+    <fieldset>
+      <label>What did your friends think about your date:
+          <textarea name="bio" rows="3" cols="30" placeholder="Please elaborate"></textarea>
+			  </label>
+    </fieldset>
+    <fieldset class="second">
+      Would you go for a second date?
+      <label><input value="1" name="second" type="radio" class="inline" /> Hell yeah!</label>
+        <label><input value="2" name="second" type="radio" class="inline" /> Uhhmm, no.</label>
+        <label><input value="3" name="second" type="radio" class="inline" /> Depends on whether if I can find someone better.</label>
+    </fieldset>
+    <fieldset class="material">
+      What material your pants made of?
+      <label><input value="1" name="material" type="radio" class="inline" /> Kumaş</label>
+        <label><input value="2" name="material" type="radio" class="inline" /> kUmaş</label>
+        <label><input value="3" name="material" type="radio" class="inline" /> kuMaş</label>
+        <label><input value="4" name="material" type="radio" class="inline" /> kumAş</label>
+        <label><input value="5" name="material" type="radio" class="inline" /> kumaŞ</label>
+    </fieldset>
+    <fieldset class="mustache">
+      Are you aware that your friend Deniz had a mustache?
+      <label><input value="1" name="mustache" type="radio" class="inline" /> Buna verebileceğim hiçbir cevap yok ki!:(</label>
+    </fieldset>
     <fieldset>
       <label>What would have made it a better date:
           <textarea name="bio" rows="3" cols="30" placeholder="Please explain"></textarea>
-      </label>
+			  </label>
     </fieldset>
     <input type="submit" id="submit" value="Submit">
     </form>
