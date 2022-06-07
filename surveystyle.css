@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(180deg, rgb(0, 130, 45), rgb(0, 75, 140));
+  color: hsl(180, 50%, 90%);
+  font-family: Tahoma;
+}
+
+h1, p {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px auto;
+}
+
+fieldset {
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  margin: 60px auto;
+  width: 60%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 20px rgba(160,126,216,0.85);
+}
+
+input,
+select,
+textarea {
+  margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 6em auto;
+  height: 2em;
+  min-width: 300px;
+}
+
+#submit {
+color: white;
+font-size: 17px;
+max-width: 400px;
+line-height: 17px;
+padding: 8px;
+border-radius: 20px;
+font-family: Tahoma, serif;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+box-shadow: rgba(160, 126, 216, 0.85) 0px 0px 20px 20px;
+border: 2px solid rgb(28, 110, 164);
+display: block;
+}
+#submit:hover {
+background: rgba(160, 126, 216, 0.85);
+box-shadow: rgba(160, 126, 216, 0.85) 0px 0px 0px 0px;
+transition: background 1s, box-shadow 1s;
+}
+#submit:active {
+background: white;
+transition: background 0.4s; 
+}
